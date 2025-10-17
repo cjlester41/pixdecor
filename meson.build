@@ -28,8 +28,8 @@ pixdecor = shared_module(
     ],
 
     dependencies: [
-        wfconfig,
-        wayfire
+        wayfire = dependency('wayfire', version: '>=0.10.0')
+		glm    = dependency('glm')
     ],
 
     install: true,
