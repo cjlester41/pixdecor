@@ -13,6 +13,9 @@ project(
 	],
 )
 
+wayfire = dependency('wayfire', version: '>=0.10.0'),
+glm = dependency('glm')
+
 add_project_arguments(['-DWLR_USE_UNSTABLE'], language: ['cpp', 'c'])
 add_project_arguments(['-DWAYFIRE_PLUGIN'], language: ['cpp', 'c'])
 add_project_link_arguments(['-rdynamic','-fPIC'], language:'cpp')
@@ -28,8 +31,8 @@ pixdecor = shared_module(
 	],
 
     dependencies: [
-        wayfire = dependency('wayfire', version: '>=0.10.0'),
-		glm    = dependency('glm')
+        wayfire,
+		glm
     ],
 
     install: true,
