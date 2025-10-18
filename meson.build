@@ -22,12 +22,12 @@ add_project_link_arguments(['-rdynamic','-fPIC'], language:'cpp')
 
 pixdecor = shared_module(
 	'pixdecor', [
-		'decoration.cpp', 
-		'deco-subsurface.cpp', 
-		'deco-button.cpp', 
-		'deco-layout.cpp', 
-		'deco-theme.cpp', 
-		'deco-effects.cpp',
+		'src/decoration.cpp', 
+		'src/deco-subsurface.cpp', 
+		'src/deco-button.cpp', 
+		'src/deco-layout.cpp', 
+		'src/deco-theme.cpp', 
+		'src/deco-effects.cpp',
 	],
 
     dependencies: [
