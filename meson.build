@@ -24,7 +24,7 @@ pixdecor = shared_module(
 		'deco-button.cpp', 
 		'deco-layout.cpp', 
 		'deco-theme.cpp', 
-		'deco-effects.cpp'
+		'deco-effects.cpp',
 	],
 
     dependencies: [
