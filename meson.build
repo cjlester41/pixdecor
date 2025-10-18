@@ -18,11 +18,14 @@ add_project_arguments(['-DWAYFIRE_PLUGIN'], language: ['cpp', 'c'])
 add_project_link_arguments(['-rdynamic','-fPIC'], language:'cpp')
 
 pixdecor = shared_module(
-    'pixdecor', [
-        'node.cpp',
-        'renderer.cpp',
-        'shaders.glsl.cpp',
-    ],
+	'pixdecor', [
+		'decoration.cpp', 
+		'deco-subsurface.cpp', 
+		'deco-button.cpp', 
+		'deco-layout.cpp', 
+		'deco-theme.cpp', 
+		'deco-effects.cpp'
+	],
 
     dependencies: [
         wayfire = dependency('wayfire', version: '>=0.10.0')
