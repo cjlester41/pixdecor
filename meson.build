@@ -33,7 +33,7 @@ pixdecor = shared_module(
     install_dir: join_paths( get_option( 'libdir' ), 'wayfire' )
 )
 
-install_data( 'winshadows.xml', install_dir: wayfire.get_variable( pkgconfig: 'metadatadir' ) )
+install_data( 'pixdecor.xml', install_dir: wayfire.get_variable( pkgconfig: 'metadatadir' ) )
 
 summary = [
 	'',
