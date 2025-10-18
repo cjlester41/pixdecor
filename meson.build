@@ -13,9 +13,6 @@ project(
 	],
 )
 
-wayfire  = dependency('wayfire')
-wfconfig = dependency('wf-config')
-
 add_project_arguments(['-DWLR_USE_UNSTABLE'], language: ['cpp', 'c'])
 add_project_arguments(['-DWAYFIRE_PLUGIN'], language: ['cpp', 'c'])
 add_project_link_arguments(['-rdynamic','-fPIC'], language:'cpp')
