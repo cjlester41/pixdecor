@@ -13,7 +13,7 @@ project(
 	],
 )
 
-wayfire = dependency('wayfire', version: '>=0.10.0'),
+wayfire = dependency('wayfire', version: '>=0.10.0')
 glm = dependency('glm')
 
 add_project_arguments(['-DWLR_USE_UNSTABLE'], language: ['cpp', 'c'])
